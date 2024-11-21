@@ -13,6 +13,6 @@ Vagrant.configure("2") do |config|
             v.name = "grafana"
         end
         grafana.vm.provision "shell", path: "scripts/common.sh"
-        grafana.vm.provision "shell", path: "scripts/create_new_user.sh"
+        grafana.vm.provision "shell", path: "scripts/create_new_user.sh" # Этот скрипт не вошел в список но можно во создать если это не обходимо.
     end 
 end
